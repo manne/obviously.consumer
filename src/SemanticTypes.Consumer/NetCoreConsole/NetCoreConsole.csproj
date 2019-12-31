@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Obviously.SemanticTypes.Consumer.NetCoreConsole</AssemblyName>
+    <RootNamespace>Obviously.SemanticTypes.Consumer.NetCoreConsole</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CodeGeneration.Roslyn.BuildTime" Version="0.6.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Obviously.SemanticTypes" Version="0.0.1-preview001" />
+    <DotNetCliToolReference Include="dotnet-codegen" Version="0.5.13" />
+  </ItemGroup>
+
+</Project>
