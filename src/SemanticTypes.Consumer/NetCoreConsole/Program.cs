@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Obviously.SemanticTypes.Generator;
 
-namespace NetCoreConsole
+namespace Obviously.SemanticTypes.Consumer.NetCoreConsole
 {
     public static class Program
     {
