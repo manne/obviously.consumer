@@ -11,14 +11,14 @@ namespace Obviously.SemanticTypes.Consumer.NetCoreConsole
             await Console.Out.WriteLineAsync("Hello! Please enter your email address");
             var enteredEmailAddressOne = await Console.In.ReadLineAsync();
             var mailOne = new EmailAddress(enteredEmailAddressOne);
-            await Console.Out.WriteLineAsync($"You entered {mailOne}");
+            await Console.Out.WriteLineAsync($"You entered '{(string)mailOne}'");
 
             await Console.Out.WriteLineAsync("Hello! Please enter your email address, the address will be checked for being well-formed");
             var enteredEmailAddressTwo = await Console.In.ReadLineAsync();
             try
             {
                 var mailTwo = new EmailAddressWithValidation(enteredEmailAddressTwo);
-                await Console.Out.WriteLineAsync($"You entered a well-formed {mailTwo}");
+                await Console.Out.WriteLineAsync($"You entered a well-formed '{(string)mailTwo}'");
             }
             catch (ArgumentException e)
             {
