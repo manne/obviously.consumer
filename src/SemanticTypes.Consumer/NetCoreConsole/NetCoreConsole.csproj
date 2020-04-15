@@ -8,12 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CodeGeneration.Roslyn.BuildTime" Version="0.6.1">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Obviously.SemanticTypes" Version="0.0.1-preview002" />
-    <DotNetCliToolReference Include="dotnet-codegen" Version="0.5.13" />
+    <PackageReference Include="Obviously.SemanticTypes" Version="0.0.1.preview.7" />
   </ItemGroup>
 
 </Project>

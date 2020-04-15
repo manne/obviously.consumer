@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Obviously.SemanticTypes.Generator;
 
 namespace Obviously.SemanticTypes.Consumer.NetCoreConsole
 {
@@ -26,18 +25,6 @@ namespace Obviously.SemanticTypes.Consumer.NetCoreConsole
                 await Console.Out.WriteLineAsync($"You entered a not well-formed email address. Parameter: {e.ParamName}. Exception message: {e.Message}");
                 Console.ResetColor();
             }
-        }
-    }
-
-    [SemanticType(typeof(string))]
-    public partial class EmailAddress { }
-
-    [SemanticType(typeof(string))]
-    public partial class EmailAddressWithValidation
-    {
-        public static bool IsValid(string value)
-        {
-            return value.Contains('@', StringComparison.OrdinalIgnoreCase);
         }
     }
 }
